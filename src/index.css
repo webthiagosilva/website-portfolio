@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-gray-100 text-xl sm:hover:text-2xl sm:cursor-pointer;
+	}
+}
+
+@layer components {
+	.website-input {
+		@apply py-1 pl-5 w-full max-w-lg dark:bg-dark-200 text-dark-200 dark:text-gray-200 rounded-full outline-none placeholder:text-gray-400 placeholder:dark:text-gray-600 placeholder:text-xs placeholder:uppercase placeholder:font-bold focus:border-2 focus:border-website-200 focus:dark:border-website-100 invalid:focus:border-2 invalid:focus:border-red-400 invalid:focus:dark:border-2 invalid:focus:dark:border-red-400 caret-website-200 dark:caret-website-100;
+	}
+
+	.website-button {
+		@apply py-1 px-5 w-full max-w-sm bg-website-100 dark:bg-dark-200 rounded-full text-gray-200 uppercase outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-red-500 hover:-translate-y-1 hover:delay-200;
+	}
+
+	.website-tag {
+		@apply bg-website-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 text-xs font-bold uppercase hover:dark:bg-website-100 hover:scale-110 hover:bg-gradient-to-r hover:from-website-200;
+	}
+}

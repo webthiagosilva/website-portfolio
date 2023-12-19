@@ -1,7 +1,9 @@
+import Header from "./components/Header/Header"
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello, tailwind!</h1>
+    <div className="h-screen">
+      <Header />
     </div>
   );
 }
