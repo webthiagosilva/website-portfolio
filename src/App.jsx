@@ -6,7 +6,7 @@ const App = () => {
   return (
     <LocaleProvider>
       <div className="h-screen">
-        <Header />        
+        <Header />
       </div>
     </LocaleProvider>
   );
