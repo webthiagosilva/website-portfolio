@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-gray-100 text-xl sm:hover:text-2xl sm:cursor-pointer;
+	}
+}
+
+@layer components {
+	.website-container {
+		@apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-website-100 to-website-200 dark:from-dark-100 dark:to-dark-200;
+	}
+
+	.website-card {
+		@apply flex flex-col items-center justify-center bg-white dark:bg-dark-200 rounded-xl shadow-md p-5 w-full max-w-lg;
+	}
+
+	.website-logo {
+		@apply h-20 w-20 rounded-full;
+	}
+
+	.website-title {
+		@apply text-2xl font-bold text-gray-200 dark:text-gray-100;
+	}
+
+	.website-description {
+		@apply text-gray-400 dark:text-gray-600 text-sm font-bold;
+	}
+
+	.website-input-container {
+		@apply flex flex-row items-center justify-center w-full max-w-lg;
+	}
+
+	
+
+
+
+
+	.website-input {
+		@apply py-1 pl-5 w-full max-w-lg dark:bg-dark-200 text-dark-200 dark:text-gray-200 rounded-full outline-none placeholder:text-gray-400 placeholder:dark:text-gray-600 placeholder:text-xs placeholder:uppercase placeholder:font-bold focus:border-2 focus:border-website-200 focus:dark:border-website-100 invalid:focus:border-2 invalid:focus:border-red-400 invalid:focus:dark:border-2 invalid:focus:dark:border-red-400 caret-website-200 dark:caret-website-100;
+	}
+
+	.website-button {
+		@apply py-1 px-5 w-full max-w-sm bg-website-100 dark:bg-dark-200 rounded-full text-gray-200 uppercase outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-red-500 hover:-translate-y-1 hover:delay-200;
+	}
+
+	.website-tag {
+		@apply bg-website-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 text-xs font-bold uppercase hover:dark:bg-website-100 hover:scale-110 hover:bg-gradient-to-r hover:from-website-200;
+	}
+}

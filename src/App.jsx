@@ -1,10 +1,15 @@
+import React from 'react';
+import LocaleProvider from './i18n/LocalesProvider';
+import Header from './components/Header/Header';
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello, tailwind!</h1>
-    </div>
+    <LocaleProvider>
+      <div className="h-screen">
+        <Header />
+      </div>
+    </LocaleProvider>
   );
-}
+};
 
 export default App;
-
