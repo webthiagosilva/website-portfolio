@@ -2,5 +2,8 @@
 	"header.home": "Home",
 	"header.about": "About",
 	"header.services": "Services",
-	"header.contact": "Contact"
+	"header.contact": "Contact",
+
+	"home.greeting": "Hi, I'm <span>Thiago</span>.",
+	"home.introduction": "From imagination to innovation, <span>I turn ideas into reality with the power of programming.</span>"
 }
