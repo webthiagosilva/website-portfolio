@@ -11,18 +11,13 @@ const LanguageSwitcher = () => {
 	};
 
 	return (
-		<div className="hidden sm:block">
-			{locale === 'pt-BR'
-				? <img src={en} className="h-8 text-gray-100 cursor-pointer" onClick={toggle} />
-				: <img src={ptbr} className="h-8 text-gray-100 cursor-pointer" onClick={toggle} />
-			}
+		<div className="hidden sm:block hover:scale-110 transition-transform duration-300">
+			<button onClick={toggle}>
+				{locale === 'pt-BR'
+					? <img src={en} className="h-8 text-gray-100 cursor-pointer" />
+					: <img src={ptbr} className="h-8 text-gray-100 cursor-pointer" />}
+			</button>
 		</div>
-
-		// <button onClick={toggle}>
-		// 	{locale === 'pt-BR'
-		// 		? <img src={ptbr} className="h-8 text-gray-100 cursor-pointer" />
-		// 		: <img src={en} className="h-8 text-gray-100 cursor-pointer" />}
-		// </button>
 	);
 };
 
